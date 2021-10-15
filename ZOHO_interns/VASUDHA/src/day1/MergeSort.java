@@ -55,8 +55,9 @@ public class MergeSort {
 
 
     void printArray(int a[], int n) {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++){
             System.out.print(a[i] + " ");
+        }
     }
 
     public static void main(String args[]) {
@@ -67,8 +68,10 @@ public class MergeSort {
 
         int[] a = new int[n];
         System.out.print("Enter array elements: ");
-        for(int i = 0;i < n;i++)
+        for(int i = 0;i < n;i++){
             a[i] = sc.nextInt();
+        }
+            
 
         /*creating an object ms for the class MergeSort to access methods*/
         MergeSort ms = new MergeSort();

@@ -52,16 +52,18 @@ public class UncommonSum {
         int f = sc.nextInt();
         int[] first = new int[f];
         System.out.print("Enter elements in First Array ");
-        for(int i = 0;i < f;i++)
+        for(int i = 0;i < f;i++){
             first[i] = sc.nextInt();
+        }
 
 
         System.out.print("Enter Second array Size: ");
         int s = sc.nextInt();
         int[] second = new int[s];
         System.out.print("Enter elements in Second Array ");
-        for(int i = 0;i < s;i++)
+        for(int i = 0;i < s;i++){
             second[i] = sc.nextInt();
+        }
 
         printUnCommon(first, f - 1, second, s - 1);
 
