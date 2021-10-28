@@ -1,0 +1,23 @@
+<project name="VASUDHA" default="compile">
+    <description>
+        simple example build file
+    </description>
+    <!-- set global properties for this build -->
+    <property name="src" location="/home/vasudha/IdeaProjects/VASUDHA/src"/>
+    <property name="build" location="/home/vasudha/IdeaProjects/VASUDHA"/>
+
+
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+    </target>
+
+    <target name="compile" depends="init"
+            description="compile the source">
+        <!-- Compile the Java code from ${src} into ${build} -->
+        <javac srcdir="${src}" destdir="${build}"/>
+    </target>
+
+</project>
